@@ -1,6 +1,6 @@
 package j240930;
 
-public class J101_Variable {
+public class J101_4_Variable {
 
 	public static void main(String[] args) {
 		
