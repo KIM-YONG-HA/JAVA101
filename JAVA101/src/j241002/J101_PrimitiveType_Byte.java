@@ -6,9 +6,13 @@ public class J101_PrimitiveType_Byte {
 		
 		// 기본형 타입(Primitive Type), 8개 
 		
-		// 정수형(Integer) : byte, short, char, int, long 
-		// 실수형 : float, double 
+		// 정수형(Integer) : byte < short == char < int < long 
+		// 실수형 : float < double 
 		// 논리형(Boolean) : boolean  
+		
+		
+		// 참조형 String 자바에서 제공하는 클래스(대문자로 시작)
+		
 		
 		
 		// byte
