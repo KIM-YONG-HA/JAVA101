@@ -21,6 +21,7 @@ public class Test01 {
 //		System.out.println(c2); // b출렬 
 //		
 		
+		
 		long var1 = 2L;
 		float var2 = 1.8f;
 		double var3 = 2.5;
