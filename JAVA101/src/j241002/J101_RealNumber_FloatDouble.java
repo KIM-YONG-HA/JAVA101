@@ -1,0 +1,24 @@
+package j241002;
+
+public class J101_RealNumber_FloatDouble {
+
+	public static void main(String[] args) {
+
+		
+		// float
+		// 크기 : 4byte(32bit)
+		// 범위 : (1.4 x 10^-45) ~ (3.4 x 10^38)
+		// 정밀도 : 소수점 이하 약 7자리(6~9) 
+		
+		
+		// double 
+		// 크기 : 8byte(64bit)
+		// 범위 : (4.9 x 10^-324) ~ (1.8 x 10^308)
+		// 정밀도 : 소수점 이하 약 15자리 (15~18)
+		
+		
+		
+
+	}
+
+}
