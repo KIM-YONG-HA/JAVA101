@@ -68,7 +68,6 @@ public class ControlStatement {
 			grade = "A";
 			range = "91 ~ 100";
 			
-			
 		} else if(score >= 81 && score <= 90) {
 			
 			grade = "B";
