@@ -5,74 +5,44 @@ public class J101_TypeCasting2 {
 	public static void main(String[] args) {
 		
 		
-		// 강제형변환(Down Casting)
+		// 강제형변환
+		
+		// 작은 허용범위 타입 = (작은 허용범위 타입) 큰허용범위타입
+		
+		int intValue = 10;
+		byte byteValue = (byte) intValue;
+		System.out.println(byteValue); // 10
+		
+		
+		// int타입은 char타입보다 더 큰 허용범위를 가지나 자동 타입변환 되지 않는다.
+		// 정수값으로 char타입에서 문자를 출력하기 위해 변환한다
+		int intValue1 = 65;
+		char charValue1 = (char) intValue1;
+		System.out.println(charValue1);
+		
+		
+		// 실수(float, double)은 정수타입(byte, short, int, long)으로 자동변환 되지 않는다.
+		// 소수점 부분은 버려지고 정수부분만 저장된다.
+		
+		double doubleValue2 = 3.14;
+		int intValue2 = (int) doubleValue2;
+		System.out.println(intValue2);
 		
 		
 		
 		
 		
 		
-//		
-//		// String to Byte 
-//		String a = "10";
-//		byte b = Byte.parseByte(a);
-//		byte c = 1;
-//		System.out.println(b); // 10
-//		System.out.println(b+c); // 11
-//
-//		
-//		// String to Int 
-//		String aa = "10";
-//		int bb = Integer.parseInt(aa);
-//		System.out.println(bb); // 10
-//		
 		
 		
 		
-	
-//		
-//		byte byteVal = Byte.parseByte("10");
-//		short shortVal = Short.parseShort("100");
-//		int intVal = Integer.parseInt("1000");
-//		long longVal = Long.parseLong("10001");
-//		float floatVal = Float.parseFloat("1.5F");
-//		double doubleVal = Double.parseDouble("10.5");
-//		boolean booleanVal = Boolean.parseBoolean("true");
-//		
-//		
-//		// 기본타입을 
-//		
-//		String str = String.valueOf(booleanVal);
-//		
-//		System.out.println(str);
-//		
-//		
-//		
 		
-//		
-//		String flag = "false";
-//		boolean flagResult = Boolean.parseBoolean(flag);
-//		System.out.println(flagResult);
-//		
-//		
-//		
-//		
-//		
-//		
-//		
-//		
-//		long var1 = 2L;
-//		float var2 = 1.8f;
-//		double var3 = 2.5;
-//		String var4 = "3.9";
-//		
-//		int rs = (int)(var1 + var2 + var3) + (int)Double.parseDouble(var4);
-//		
-//		
-//		System.out.println(rs);
-//		
-//		System.out.println(((Object)var4).getClass().getSimpleName());
-
+		
+		
+		
+		
+		
+		
 		
 		
 		

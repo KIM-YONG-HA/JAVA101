@@ -4,9 +4,9 @@ public class J101_TypeCasting1 {
 
 	public static void main(String[] args) {
 		
-		// 자동형변환(Promotion), 묵시적형변환(Up Casting)
+		// 자동형변환(Promotion), 묵시적형변환
 		
-		// 큰 허용 범위타입  = 작은 허용 범위타입
+		// 큰 허용 범위타입 = 작은 허용 범위타입
 		
 		// 기본타입 허용 범위 크기 
 		// byte < short < int < long < float < double
