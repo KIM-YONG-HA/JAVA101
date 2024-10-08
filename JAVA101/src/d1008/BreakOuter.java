@@ -1,6 +1,6 @@
 package d1008;
 
-import javax.sql.rowset.serial.SQLOutputImpl;
+
 
 public class BreakOuter {
 
@@ -9,17 +9,20 @@ public class BreakOuter {
 		
 		
 		
-		Outer : for(char upper = '가'; upper <= 'Z'; upper++) {
+		Outer : for(char upper = 'A'; upper <= 'Z'; upper++) {
 			
 			
-			//System.out.println(upper);
+			System.out.println(upper);
 			
+			if(upper == 'B') break Outer;
 			
 			for(char lower = 'a'; lower<='z'; lower++) {
 				
-				//System.out.printf("%d - %d", upper, lower);
+				System.out.printf("%s - %s%n", upper, lower);
 				
-				System.out.println(upper);
+				//if(lower == 'g') break Outer;
+				
+				
 				
 			}
 			
