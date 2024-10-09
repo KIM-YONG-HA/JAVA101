@@ -1,6 +1,6 @@
 package starPatternPrinting;
 
-public class Step01_RightAngledTriangle {
+public class Pattern01 {
 
 	public static void main(String[] args) {
 		
@@ -11,20 +11,66 @@ public class Step01_RightAngledTriangle {
 //		***
 //		****
 //		*****
+//		
+//		for(int i = 0; i < 5; i++) {
+//			
+//			System.out.print("*");
+//			
+//			for(int j = 1; j <= i; j++) {
+//				
+//				System.out.print("*");
+//				
+//			}
+//			
+//			System.out.println();
+//			
+//		}
+//		
 		
-//		역직각삼각형 (Inverted Right-Angled Triangle)
-//		*****
-//		****
-//		***
-//		**
-//		*
+		
+//		
+//		// refactoring
+//		for(int i = 0; i < 5; i++) {
+//			
+//			for(int j = 0; j <= i; j++) {
+//				
+//				System.out.print("*");
+//				
+//			}
+//			
+//			System.out.println();
+//			
+//		}
+//		
+//		
+//		
 
-//		오른쪽 정렬 직각삼각형 (Right-Aligned Right-Angled Triangle)
-//		*
-//		**
-//		***
-//		****
-//		*****
+		
+//		
+//		// 확장성 추가 
+//		int rows = 5;
+//		
+//		for(int i = 0; i < rows; i++) {
+//			
+//			for(int j = 0; j <= i; j++) {
+//				
+//				System.out.print("*");
+//				
+//			}
+//			
+//			System.out.println();
+//			
+//		}
+//		
+//		
+//		
+		
+		
+		
+		
+		
+
+
 
 //		왼쪽 정렬 직각삼각형 (Left-Aligned Right-Angled Triangle)
 //		*****
@@ -65,13 +111,7 @@ public class Step01_RightAngledTriangle {
 //	*       *
 //	*********
 
-//	별 계단 (Star Staircase)
-//	*
-//	**
-//	***
-//	****
-//	*****
-//	******
+
 
 //	나무 모양 (Tree Shape)
 //	    *
