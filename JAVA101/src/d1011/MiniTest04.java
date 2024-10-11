@@ -36,69 +36,68 @@ public class MiniTest04 {
 			System.out.print("연산자 ( +, -, *, /, % ) : ");
 			op = sc.next();
 			
-			if(!op.equals("+") && !op.equals("-") && !op.equals("*") && !op.equals("/") && !op.equals("%") && !op.equals("exit")) {
-				
-				System.out.println("연산자와 exit만 입력 가능합니다.");
-				continue;
-				
-			}
+				if(!op.equals("+") && !op.equals("-") && !op.equals("*") && !op.equals("/") && !op.equals("%") && !op.equals("exit")) {
+					
+					System.out.println("연산자와 exit만 입력 가능합니다.");
+					continue;
+					
+				}
 			
 			
-			
-			 if(!op.equals("exit")) {
+				if(!op.equals("exit")) {
 				 
-				System.out.print("정수1 : ");
-				x = sc.nextInt(); 
-				
-				System.out.print("정수2 : ");
-				y = sc.nextInt(); 
-			 
-			 }
+					System.out.print("정수1 : ");
+					x = sc.nextInt(); 
+					
+					System.out.print("정수2 : ");
+					y = sc.nextInt(); 
+				 
+				}
 
-			
-			if(op.equals("+")){
 				
-				calc = x + y; 
-				
-			} else if(op.equals("-")) {
-				
-				calc = x - y; 
-				
-			} else if(op.equals("*")) {
-				
-				calc = x * y; 
-				
-			} else if(op.equals("/")) {
-				
-				if(y != 0) {
-				
-					calc = x / y;
+				if(op.equals("+")){
+					
+					calc = x + y; 
+					
+				} else if(op.equals("-")) {
+					
+					calc = x - y; 
+					
+				} else if(op.equals("*")) {
+					
+					calc = x * y; 
+					
+				} else if(op.equals("/")) {
+					
+					if(y != 0) {
+					
+						calc = x / y;
+						
+					} else {
+						
+						System.out.println("0으로 나눌 수 없습니다");
+						
+					}
+					
+				} else if(op.equals("%")) {
+					
+					calc = x % y; 
+					
+				} else if(op.equals("exit")) {
+					
+					System.out.println("프로그램을 종료합니다."); 
+					break;
 					
 				} else {
 					
-					System.out.println("0으로 나눌 수 없습니다");
-					
+					//System.out.println("프로그램을 종료합니다."); 
+					break;
 				}
 				
-			} else if(op.equals("%")) {
 				
-				calc = x % y; 
+				System.out.printf("%d %s %d = %d%n", x, op, y, calc);
 				
-			} else if(op.equals("exit")) {
-				
-				System.out.println("프로그램을 종료합니다."); 
-				break;
-				
-			} else {
-				
-				//System.out.println("프로그램을 종료합니다."); 
-				break;
-			}
-			
-			
-			System.out.printf("%d %s %d = %d%n", x, op, y, calc);
-			
-			isCalc = false;
+				isCalc = false;
 
 			
 		} // end while

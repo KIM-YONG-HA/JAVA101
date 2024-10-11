@@ -1,6 +1,6 @@
 package d1011;import java.util.Scanner;
 
-import javax.swing.plaf.synth.SynthConstants;
+
 
 public class MiniTest01 {
 
@@ -13,12 +13,11 @@ public class MiniTest01 {
 //		1미만의 숫자가 입력되면 '1 이상의 숫자를 입력하세요'
 //		출력하고 다시 입력하게 하세요.
 		
-		int sum = 0;
-		boolean flag = true;
+
 		Scanner sc = new Scanner(System.in);
 		int inp;
 		
-		while(flag) {
+		while(true) {
 			
 			System.out.print("숫자 입력 : ");
 			inp = sc.nextInt();
@@ -31,12 +30,11 @@ public class MiniTest01 {
 				
 				for(int i = 1; i<=inp; i++) {
 					
-					sum += i;
+					System.out.print(i + " ");
 					
 				}
 				
-				System.out.printf("1 ~ %d까지의 합 : %d", inp, sum);
-				flag = false;
+				break;
 				
 			}
 			

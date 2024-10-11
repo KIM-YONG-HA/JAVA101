@@ -8,10 +8,13 @@ public class J101_PrimitiveType_Char {
 		// 메모리 : 2Byte(16bit)
 		// 범위 : 0 ~ (2^16-1) / 0 ~ 65533
 
-		// 문자 리터럴 : 작은 따옴표
+		// 문자 리터럴 : 작은 따옴표에 감싼 형태 
 		// 유니코드 : 아스키 코드에서 확장 
 		
-		char var1 = 'A';
+		
+		
+		
+		char var1 = 'A'; 
 		int var2 = var1;
 		int var3 = 'B';
 		System.out.println(var1);
