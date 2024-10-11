@@ -39,7 +39,6 @@ public class MiniTest03 {
 				if(x > 10 || y > 10) {
 					
 					System.out.println("9 이하의 숫자만 입력해주세요.");
-					continue;
 					
 				} else {
 					

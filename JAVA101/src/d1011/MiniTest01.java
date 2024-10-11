@@ -38,11 +38,7 @@ public class MiniTest01 {
 				
 			}
 			
-			
 		}
-		
-		
-		
 		
 
 	}
