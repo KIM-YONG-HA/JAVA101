@@ -13,16 +13,14 @@ public class J101_PrimitiveType_Byte {
 		
 		// 참조형 String 자바에서 제공하는 클래스(대문자로 시작)
 		
-		
-		
 		// byte
 		// 메모리 : 1Byte(8bit)
 		// 범위 : -2^7 ~ (2^7-1) / -128 ~ 127
 		
 		byte by1 = -128;
-		byte by2 = -30;
+		byte by2 = -100;
 		byte by3 = 0;
-		byte by4 = 30;
+		byte by4 = 100;
 		byte by5 = 127;
 		//byte var6 = 128;
 		

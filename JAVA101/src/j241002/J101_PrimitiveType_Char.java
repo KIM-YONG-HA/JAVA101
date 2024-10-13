@@ -1,6 +1,6 @@
 package j241002;
 
-public class J101_PrimitiveType_Char2 {
+public class J101_PrimitiveType_Char {
 	public static void main(String[] args) {
 		
 		
@@ -10,36 +10,6 @@ public class J101_PrimitiveType_Char2 {
 
 		// 문자 리터럴 : 작은 따옴표에 감싼 형태 
 		// 유니코드 : 아스키 코드에서 확장 
-		
-		
-		
-		
-		char var1 = 'A'; 
-		int var2 = var1;
-		int var3 = 'B';
-		System.out.println(var1);
-		System.out.println(var2);
-		System.out.println(var3);
-		
-		int name1 = '홍';
-		int name2 = '길';
-		int name3 = '동';
-		
-		System.out.println("----------------");
-		System.out.println(name1);
-		System.out.println(name2);
-		System.out.println(name3);
-		
-		char c1 = 54861;
-		char c2 = 44600;
-		char c3 = 46041;
-		
-		System.out.println("----------------");
-		System.out.println(c1);
-		System.out.println(c2);
-		System.out.println(c3);
-		
-		
 		
 		
 		char c11 = 'A'; // 문자
