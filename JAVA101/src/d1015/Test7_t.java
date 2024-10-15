@@ -21,18 +21,15 @@ public class Test7_t {
 		// 게임 5번 실행
 		for(int j=1; j<=5; j++) {
 			
-			
 			// 셔플 
 			for(int k = 1; k <= 500; k++){
 			
-			
-			int st = (int)(Math.random() * 45);
-			int ed = (int)(Math.random() * 45);
-			
-			int tmp = ar[st];
-			ar[st] = ar[ed];
-			ar[ed] = tmp;
+				int st = (int)(Math.random() * 45);
+				int ed = (int)(Math.random() * 45);
 				
+				int tmp = ar[st];
+				ar[st] = ar[ed];
+				ar[ed] = tmp;
 				
 			}
 			
