@@ -9,6 +9,12 @@ public class Array {
 		double[] doubleArray;
 		String[] stringArray;
 		
+		
+		int[] arr = new int[3];
+		
+		
+		
+		
 
 	}
 
