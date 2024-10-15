@@ -31,15 +31,22 @@ public class Ex01 {
 			
 		}
 		
-		
-		System.out.println(arr1[0]);
-		System.out.println(arr1[1]);
-		System.out.println(arr1[2]);
-		System.out.println(arr1[3]);
-		System.out.println(arr1[4]);
-		
-		System.out.println(arr3[0]);
 
+		
+		for(int i = 0;i<arr1.length;i++) {
+			
+			
+			if(i != arr1.length - 1) {
+				
+				System.out.printf(arr1[i] + ", ");
+				
+			} else {
+				
+				System.out.printf(arr1[i] + " ");
+				
+			}
+			
+		}
 		
 		
 		
