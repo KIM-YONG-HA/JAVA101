@@ -9,7 +9,6 @@ public class Array {
 		double[] doubleArray;
 		String[] stringArray;
 		
-		
 
 	}
 
