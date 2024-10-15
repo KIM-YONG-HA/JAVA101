@@ -45,7 +45,7 @@ public class Test6 {
 		
 
 		for(int i = 0; i<arr.length; i++) {
-			if(i == 0) System.out.println("** 셔플 후 데이터 ***");
+//			if(i == 0) System.out.println("** 셔플 후 데이터 ***");
 			
 			shuffleArr[arr[i]] = arr[i];
 			System.out.print(shuffleArr[i] + " ");
