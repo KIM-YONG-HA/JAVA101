@@ -2,20 +2,17 @@ package d1016;
 
 import java.util.Scanner;
 
-
-
 public class Test1 {
 
 	public static void main(String[] args) {
-		
-		
+
 		// 문자열 입력 받아 배열에 저장
 		// 검색한 문자가 문자가 몇개 인지?
-		// 인덱스 위치는 어디인지? 
-		
-		// ex) apple, p 검색 
-		// p 2개 존재, p => 1, 2 
-		
+		// 인덱스 위치는 어디인지?
+
+		// ex) apple, p 검색
+		// p 2개 존재, p => 1, 2
+
 		Scanner sc = new Scanner(System.in);
 
 		System.out.print("문자열 입력 : ");
@@ -66,9 +63,6 @@ public class Test1 {
 			}
 
 		}
-		
-
-		
 
 	}
 
