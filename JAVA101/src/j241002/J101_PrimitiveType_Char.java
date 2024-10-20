@@ -3,7 +3,6 @@ package j241002;
 public class J101_PrimitiveType_Char {
 	public static void main(String[] args) {
 		
-		
 		// char
 		// 메모리 : 2Byte(16bit)
 		// 범위 : 0 ~ (2^16-1) / 0 ~ 65533
