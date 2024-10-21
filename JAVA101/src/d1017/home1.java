@@ -23,7 +23,6 @@ public class home1 {
 			System.out.print(arr[i] + ", ");
 			
 		}
-			
 		
 		
 		// 
@@ -37,7 +36,6 @@ public class home1 {
 		System.out.println();
 		
 		
-		
 		for(int i=0;i<arr.length - 1;i++) {
 			
 			//System.out.print("i : " + i);
@@ -48,6 +46,8 @@ public class home1 {
 				
 				//System.out.print(" j : " + j);
 				
+				idxArr[i] = maxIDX;
+				
 				if(arr[maxIDX] < arr[j]) {
 					
 					maxIDX = j;
@@ -57,7 +57,7 @@ public class home1 {
 				int tmp = arr[i];
 				arr[i] = arr[maxIDX];
 				arr[maxIDX] = tmp;
-				
+				//
 			}
 				
 			//System.out.println();
