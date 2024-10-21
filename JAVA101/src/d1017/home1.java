@@ -35,6 +35,8 @@ public class home1 {
 		System.out.println();
 		System.out.println();
 		
+		idxArr = arr.clone();
+		
 		
 		for(int i=0;i<arr.length - 1;i++) {
 			
@@ -46,8 +48,6 @@ public class home1 {
 				
 				//System.out.print(" j : " + j);
 				
-				idxArr[i] = maxIDX;
-				
 				if(arr[maxIDX] < arr[j]) {
 					
 					maxIDX = j;
@@ -57,9 +57,9 @@ public class home1 {
 				int tmp = arr[i];
 				arr[i] = arr[maxIDX];
 				arr[maxIDX] = tmp;
-				//
+
 			}
-				
+			
 			//System.out.println();
 			
 		}
@@ -67,8 +67,15 @@ public class home1 {
 		
 		for(int i=0;i<arr.length;i++) {
 			
-			System.out.println(idxArr[i]+" 번째 값 :" +   arr[i] + " / "+ (i+1) + "위 ");
-			
+			int tmpIdx = 0;
+	
+			for(int j=0;j<idxArr.length;j++) {
+				
+				if(arr[i] == idxArr[j]) tmpIdx = j;
+				
+			}
+				
+			System.out.println(tmpIdx+"번째 값 : " +   arr[i] + " / 순위 : "+ (i+1) + "");
 			
 		}
 		
