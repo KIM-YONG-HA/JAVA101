@@ -33,9 +33,19 @@ public class Home1_t {
 					System.out.printf(", 순위 : %3d ",rank[i]);
 					
 					
-					for(int j=rank[i];j>0;j--) {
+					for(int j=rank.length;j>=rank[i];j--) {
 						System.out.print("*");
 					}
+//					
+//					for(int k=1;k<=21-rank[i];k++) {
+//						System.out.print("*");
+//					}
+					
+//					for(int k=0;k<=ar.length-rank[i];k++) {
+//						System.out.print("*");
+//					}
+					
+					
 					
 					System.out.println();
 				}
