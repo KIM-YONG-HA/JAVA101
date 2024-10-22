@@ -27,7 +27,11 @@ public class J101_RealNumber_FloatDouble {
 		double var5 = 0.1234567890123456789;
 		
 		
-		System.out.println();
+		//System.out.println(var1);
+		System.out.println(var2);
+		System.out.println(var3);
+		System.out.println(var4);
+		System.out.println(var5);
 		
 		
 
