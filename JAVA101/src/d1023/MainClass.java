@@ -13,8 +13,6 @@ public class MainClass {
 		Test test = new Test();
 		test.a = 10;
 		
-		
-		
 	}
 
 }
