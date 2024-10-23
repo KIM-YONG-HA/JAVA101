@@ -88,7 +88,7 @@ public class Marine {
 		
 		int val = this.getWeapon() + w;
 		this.setWeapon(val);
-		System.out.printf("공격력 %d 증가(현재 공격력:%d)%n", w, val);
+		System.out.printf("공격력 %d 증가 (현재 공격력:%d)%n", w, val);
 		
 		
 	}
@@ -98,7 +98,7 @@ public class Marine {
 		
 		int val = this.getWeapon() + a;
 		this.setWeapon(val);
-		System.out.printf("방어력 %d 증가(현재 방어력:%d)%n", a, val);
+		System.out.printf("방어력 %d 증가 (현재 방어력:%d)%n", a, val);
 		
 		
 	}
@@ -107,9 +107,9 @@ public class Marine {
 	//3) 체력 감소
 	void hpCalc(int hp) {
 		
-		int crntHp = this.getHp() + hp;
+		int crntHp = this.getHp() - hp;
 		this.setHp(crntHp);
-		System.out.printf("hp %d 감소 %n", hp);
+		System.out.printf("hp %d 감소 (현재 hp:%d)%n", hp, crntHp);
 	}
 	
 	

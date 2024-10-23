@@ -1,23 +1,28 @@
 package d1023;
 
-public class Ex5 {
+public class MarineTestClass {
 
 	public static void main(String[] args) {
 
 		Marine m1 = new Marine();
 		m1.upgradeWeapon(10);
 		m1.upgradeArmor(10);
+		m1.hpCalc(10);
+		m1.positionChange(10, 20);
 		
+		
+		System.out.println();
+		System.out.println();
 		
 		
 		Marine m2 = new Marine();
-		System.out.println(m2.getHp());
-		m2.positionChange(22, 44);
 		
+		m2.upgradeWeapon(20);
+		m2.upgradeArmor(20);
 		m2.hpCalc(50);
-		System.out.println(m2.getHp());
+		m2.positionChange(100, 200);
 		
-		System.out.println(m1.getHp());
+
 		
 		
 	}
