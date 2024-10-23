@@ -13,7 +13,6 @@ class Ex3 {
 		double posA = x2 - x1;
 		double posB = y2 - y1;
 		double posC = Math.sqrt(posA) + Math.sqrt(posB) ;
-		
 	
 		double result = Math.sqrt(posC);
 		

@@ -65,9 +65,6 @@ class MyTv {
 			
 		}
 		
-		
-		
-		
 	}
 
 	void channelDown() {
