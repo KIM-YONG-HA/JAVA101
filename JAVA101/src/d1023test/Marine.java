@@ -1,4 +1,4 @@
-package d1023;
+package d1023test;
 
 
 //Marine 클래스와 생성자, getter, setter메소드와 기능 메소드를 정의하고

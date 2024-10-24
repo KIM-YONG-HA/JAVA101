@@ -1,4 +1,4 @@
-package d1023;
+package d1023test;
 
 class MyPoint {
 	int x;
