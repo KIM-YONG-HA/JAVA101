@@ -16,9 +16,15 @@ class MyPoint {
 			
 			double posA = x2 - this.x;
 			double posB = y2 - this.y;
-			double posC = Math.sqrt(posA) + Math.sqrt(posB) ;
 			
-			double result = Math.sqrt(posC);
+			// 로직 재확인
+			
+//			double posC = Math.sqrt(posA) + Math.sqrt(posB) ;
+//			double result = Math.sqrt(posC);
+			
+			
+			double posC = Math.sqrt(posA * posA + posB * posB) ;
+			double result = posC;
 			
 			return result;
 		}
