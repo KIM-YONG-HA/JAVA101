@@ -1,4 +1,4 @@
-package d1023;
+package d1023test;
 
 class ExStudent {
 
@@ -9,9 +9,7 @@ class ExStudent {
 	 System.out.println("총점:"+s.getTotal()); // 총점:236
 	 System.out.println("평균:"+s.getAverage()); // 평균:78.7
 	 
-	 
 	 System.out.println(s.info());
-	 
 	 
 	 
 	}
@@ -42,8 +40,8 @@ class Student {
 		this.eng = eng;
 		this.math = math;
 		
-		this.getTotal();
-		this.getAverage();
+		//this.getTotal();
+		//this.getAverage();
 		
 		
 	}
@@ -60,10 +58,12 @@ class Student {
 	
 	// 평균을 소수점 1자리로 계산 
 	float getAverage() {
-		int sum = this.kor + this.eng + this.math;
 		
+		int sum = this.kor + this.eng + this.math;
 		float result = (float) sum / 3 ;
 		result = (float)Math.round(result*10) / 10;
+		
+		// Math.round(getTotal() / 3f * 10) / 10f
 		
 		return result;
 		

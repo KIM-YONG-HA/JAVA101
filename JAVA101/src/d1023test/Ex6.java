@@ -1,4 +1,4 @@
-package d1023;
+package d1023test;
 
 class MyTv {
 	boolean isPowerOn;
@@ -12,6 +12,8 @@ class MyTv {
 	void turnOnOff() {
 		
 		// (1) isPowerOn의 값이 true면 false로, false면 true로 바꾼다.
+		
+		// isPowerOn = !isPowerOn;
 		if (this.isPowerOn) {
 			
 			this.isPowerOn = false;
@@ -55,6 +57,13 @@ class MyTv {
 	// 만일 channel이 MAX_CHANNEL이면, 
 	// channel의 값을 MIN_CHANNEL로 바꾼다.
 			
+		
+//		if(++channel > MAX_CHANNEL) {
+//			
+//			this.channel = MIN_CHANNEL;
+//		}
+		
+		
 		if(this.channel == MAX_CHANNEL) {
 			
 			this.channel = MIN_CHANNEL;
@@ -72,6 +81,12 @@ class MyTv {
 	// (5) channel의 값을 1감소시킨다. 
 	// 만일 channel이 MIN_CHANNEL이면, 
 	// channel의 값을 MAX_CHANNEL로 바꾼다.
+		
+//		if(--channel > MIN_CHANNEL) {
+//		
+//		this.channel = MAX_CHANNEL;
+//	    }
+		
 			
 		if(this.channel == MIN_CHANNEL) {
 			
