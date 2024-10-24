@@ -1,6 +1,5 @@
 package d1023test;
 
-
 //Marine 클래스와 생성자, getter, setter메소드와 기능 메소드를 정의하고
 //Marine 클래스를 테스트 할 수 있는 클래스를 정의
 
