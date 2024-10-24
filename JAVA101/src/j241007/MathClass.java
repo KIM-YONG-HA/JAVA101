@@ -6,8 +6,8 @@ public class MathClass {
 		
 
 		// Math Class의 생성자는 접근 제어자가 private이기 때문에 
-		// 다른 클래스에서 인스턴스 생성 불가
-		
+// 다른 클래스에서 인스턴스 생성 불가
+
 //		double a = 90.7652;
 //		a *= 100;
 //		
@@ -29,59 +29,89 @@ public class MathClass {
 //		
 //		
 //		System.out.println(score[4]);
-		
-		
-		// 난수 생성 
-		// Math.random()
-		
-		double ran1 = Math.random(); // 0.0 <= num <= 0.99 
-		System.out.println(ran1);
-		System.out.println();
-		
-		int ran2 = (int)(Math.random() * 10); // 0 <= num <= 9
-		System.out.println(ran2);
-		System.out.println();
-		
-		int ran3 = (int)(Math.random()*10) + 1; // 0 + 1 <= num <= 9 + 1, 1에서  10까지 
-		System.out.println(ran3);
-		System.out.println();
-		
-		
-		int ran4 = (int)(Math.random() * 11 ) - 10;  // (0.0 X 11) - 10 <= num <= (0.99 x 11) - 10, -10에서 10까지  
-		System.out.println(ran4);
-		System.out.println();
-		
+
+
+// 난수 생성 
+// Math.random()
+
+
+
+// Math.random() 메서드
+// 0.0 (포함)에서 1.0 (미포함) 사이 난수를 반환.
+
+
+// 0.0 이상 1.0 미만의 난수 생성
+ double ran1 = Math.random(); // 0.0 <= num < 1.0
+ System.out.println("0.0 이상 1.0 미만의 난수: " + ran1);
+     System.out.println();
+  
+     
+     // 0부터 9까지의 정수 난수 생성
+ // (Math.random() * 10) 의 결과는 0.0 (포함)에서 10.0 (미포함) 사이의 실수
+ // 정수로 변환하기 위해 (int)로 캐스팅 
+ // 0부터 9까지의 정수가 생성
+ int ran2 = (int)(Math.random() * 10); // 0 <= num <= 9
+ System.out.println("0부터 9까지의 정수 난수: " + ran2);
+ System.out.println();
+ 
+ 
+ // 1부터 10까지의 정수 난수 생성
+ // 1을 더함으로써 난수의 범위를 1에서 10으로 변경
+ // 0 + 1 <= num <= 9 + 1
+ // 1 <= num <= 10
+ 
+ int ran3 = (int)(Math.random() * 10) + 1;
+ System.out.println("1부터 10까지의 정수 난수: " + ran3);
+ System.out.println();
+
+
+ 
+ // -10부터 10까지의 정수 난수 생성
+ // (Math.random() * 21)의 결과는 0.0 (포함)에서 21.0 (미포함) 사이의 실수입니다.
+ // 여기에 -10을 더해 난수의 범위를 -10에서 10
+ // -10부터 10까지의 정수가 생성
+ int ran4 = (int)(Math.random() * 21) - 10; // -10 <= num <= 0
+ System.out.println("-10부터 0까지의 정수 난수: " + ran4);
+	     System.out.println();
+	     
+	     
+	     
+	
+ 
+ 
+	     
+
 		
 		
 		
 		// 소수점 자리 ....
-		// round(), ceil(), floor();
-		
-		
-		
-		
-		// 제곱근 
-		// sqrt()
-		
-		double a = Math.sqrt(3); // √ 3
-		double b = Math.sqrt(4); // √ 4
-		double c = Math.sqrt(5); // √ 5
-		
-		System.out.println(a);
-		System.out.println(b);
-		System.out.println(c);
-		System.out.println();
-		
-		double aa = Math.sqrt(3*3); // √ 3X3
-		double bb = Math.sqrt(4*4); // √ 4X4
-		double cc = Math.sqrt(5*5); // √ 5X5
-		
-		System.out.println(aa);
-		System.out.println(bb);
-		System.out.println(cc);
-		System.out.println();
-		
-		double calc = Math.sqrt(3*3 + 4*4); // // √ 3X3 + √ 4X4 
+// round(), ceil(), floor();
+
+
+
+
+// 제곱근 
+// sqrt()
+
+double a = Math.sqrt(3); // √ 3
+double b = Math.sqrt(4); // √ 4
+double c = Math.sqrt(5); // √ 5
+
+System.out.println(a);
+System.out.println(b);
+System.out.println(c);
+System.out.println();
+
+double aa = Math.sqrt(3*3); // √ 3X3
+double bb = Math.sqrt(4*4); // √ 4X4
+double cc = Math.sqrt(5*5); // √ 5X5
+
+System.out.println(aa);
+System.out.println(bb);
+System.out.println(cc);
+System.out.println();
+
+double calc = Math.sqrt(3*3 + 4*4); // // √ 3X3 + √ 4X4 
 		System.out.println(calc);
 		
 		
@@ -92,54 +122,51 @@ public class MathClass {
 
 
 /*
-//난수 생성 예제
-//Java의 Math.random() 메서드를 사용하여 난수를 생성하는 방법을 알아보겠습니다.
 
-public class RandomExample {
- public static void main(String[] args) {
-     // 1. 0.0 이상 1.0 미만의 난수 생성
-     // Math.random() 메서드는 0.0 (포함)에서 1.0 (미포함) 사이의 난수를 반환합니다.
-     double ran1 = Math.random(); // 0.0 <= num < 1.0
-     System.out.println("0.0 이상 1.0 미만의 난수: " + ran1);
-     System.out.println();
-     
-     // 2. 0부터 9까지의 정수 난수 생성
-     // (Math.random() * 10) 의 결과는 0.0 (포함)에서 10.0 (미포함) 사이의 실수입니다.
-     // 이를 정수로 변환하기 위해 (int)로 캐스팅합니다. 이 경우 0부터 9까지의 정수가 생성됩니다.
-     int ran2 = (int)(Math.random() * 10); // 0 <= num <= 9
-     System.out.println("0부터 9까지의 정수 난수: " + ran2);
-     System.out.println();
-     
-     // 3. 1부터 10까지의 정수 난수 생성
-     // 1을 더함으로써 난수의 범위를 1에서 10으로 이동합니다.
-     int ran3 = (int)(Math.random() * 10) + 1; // 1 <= num <= 10
-     System.out.println("1부터 10까지의 정수 난수: " + ran3);
-     System.out.println();
-     
-     // 4. -10부터 10까지의 정수 난수 생성
-     // (Math.random() * 11)의 결과는 0.0 (포함)에서 11.0 (미포함) 사이의 실수입니다.
-     // 여기에 -10을 더함으로써 난수의 범위를 -10에서 0까지로 이동시킵니다.
-     // 따라서 최종적으로 -10부터 10까지의 정수가 생성됩니다.
-     int ran4 = (int)(Math.random() * 11) - 10; // -10 <= num <= 0
-     System.out.println("-10부터 0까지의 정수 난수: " + ran4);
-     System.out.println();
- }
-}
+
+
 
 Java의 Math.random()을 이용한 난수 생성
-Java에서 난수를 생성할 때 가장 많이 사용되는 방법 중 하나가 Math.random() 메서드입니다. 이 메서드는 0.0 (포함)에서 1.0 (미포함) 사이의 난수를 생성하는 데 사용됩니다. 위 코드에서는 이를 활용하여 다양한 범위의 난수를 생성하는 방법을 살펴보았습니다.
 
-실수 난수 생성: Math.random()을 사용하여 생성된 실수 난수는 0.0 이상 1.0 미만의 값을 가집니다. 이 값은 주로 확률 계산이나 비율을 사용할 때 유용합니다.
+Java에서 난수를 생성할 때 가장 많이 사용되는 방법 중 하나가 Math.random() 메서드.
 
-정수 난수 생성: 정수 범위를 지정하고 싶을 때는 Math.random()으로 생성된 값을 특정 값으로 곱한 후, (int)로 캐스팅하여 정수로 변환합니다. 
+random() 메서드는 0.0 (포함)에서 1.0 (미포함) 사이의 난수를 생성하는 데 사용. 
 
-예를 들어, 0부터 9까지의 정수 난수를 생성하기 위해 10을 곱한 후 정수형으로 변환합니다.
+생성된 실수 난수는 0.0 이상 1.0 미만의 값을 가집니다. 
+ 
+배열의 인덱스값을 랜덤으로 생성해서 배열을 셔플하거나, 1~45 범위의 로또 번호 생성 등에 사용
 
-범위 조정: 원래 난수의 범위를 이동시키고 싶다면, 생성된 난수에 상수를 더하거나 빼는 방법을 사용합니다. 예를 들어, 1에서 10까지의 난수를 생성하기 위해 10을 곱한 후 1을 더합니다.
 
-음수 포함 난수 생성: 특정 범위에 음수를 포함하고 싶을 때는 음수의 시작점에서 양수 범위를 지정하여 연산합니다. 예를 들어, -10부터 10까지의 난수를 생성하기 위해 (Math.random() * 11) - 10와 같은 방식을 사용할 수 있습니다.
 
-이와 같이 Math.random() 메서드를 활용하면 다양한 형태의 난수를 쉽게 생성할 수 있습니다. 필요에 따라 난수의 범위와 형식을 조정하여 다양한 상황에 맞게 사용할 수 있습니다.
+실수 이기 때문에 정수를 원한다면 (int)로 캐스팅하여 정수로 변환 
+
+
+
+
+     
+ 정리 
+ 
+ 시작수를 n, 종료를 m 이라고 할 때(이때 n,m은 양의 정수)
+ 
+ (int)(Math.random() * m) + n
+ ex) 1 ~ 45
+ (int)(Math.random() * 45) + 1
+ ex) 0 ~ 5
+ (int)(Math.random() * 5)
+
+ 시작수를 n, 종료를 m 이라고 할 때(이때 n은 음의 정수)
+ (int)(Math.random()∗(m−n+1))+n
+ ex) -10 ~ 10 
+ (int)(Math.random()∗(10-(-10)+1)) - 10
+ ex) - 2000 ~ 4000
+ (int)(Math.random()∗(4000−(-2000)+1)) - 2000
+ 
+ n, m의 절대값을 더한 후 1 더해주면 종료값이라 생각하면 편하다 => 6001
+
+
+
+
+
 
 */
 
