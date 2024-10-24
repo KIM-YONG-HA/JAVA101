@@ -9,6 +9,16 @@ class Ex3 {
 	
 	static double getDistance(int x1, int y1, int x2, int y2) {
 		
+		/*
+		 
+		 Math.pow(밑, 지수) : 거듭제곱
+		 double tmpA = Math.pow(3, 2); 
+		 double tmpB = Math.pow(4, 2);
+		 double tmpC = Math.sqrt(tmpA + tmpB);
+		 
+		 */
+	
+		
 		
 		double posA = x2 - x1;
 		double posB = y2 - y1;

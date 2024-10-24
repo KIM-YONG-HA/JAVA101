@@ -23,6 +23,7 @@ class SutdaCard {
 	public SutdaCard() {
 		this.num = 1;
 		this.isKwang = true;
+		// this(1, true);
 
 	}
 
@@ -38,6 +39,9 @@ class SutdaCard {
 
 		String result = String.valueOf(this.num) + tmp;
 		return result;
+		
+		// return num + (isKwang?"K":"");
+		
 
 	}
 

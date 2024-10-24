@@ -22,7 +22,6 @@ class MyPoint {
 //			double posC = Math.sqrt(posA) + Math.sqrt(posB) ;
 //			double result = Math.sqrt(posC);
 			
-			
 			double posC = Math.sqrt(posA * posA + posB * posB) ;
 			double result = posC;
 			

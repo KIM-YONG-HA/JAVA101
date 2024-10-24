@@ -1,16 +1,33 @@
 package d1023test;
 
 public class Ex5Shuffle {
-
-
-	
-	
 	
 	/*
 	 * (1) shuffle메서드를 작성하시오.
 	 */
 	
 	static int[] shuffle(int[] origin) {
+		
+		
+		/*
+		 
+		 for(int i=0;i<arr.length*2;i++){
+		 
+		 	int tmp = arr[x];
+		 	int x = (int)(Math.random() * arr.length);
+		 	int y = (int)(Math.random() * arr.length);
+		 	
+		 	tmp = arr[x];
+		 	arr[x] = arr[y];
+		 	arr[y] = tmp;
+		 
+		 }
+
+		 return arr;
+		 
+		 */
+		
+		
 
 		for(int i=0;i<origin.length;i++) {
 			
@@ -34,6 +51,7 @@ public class Ex5Shuffle {
 		}
 		
 		return origin;
+		
 	}
 	
 	
@@ -51,3 +69,4 @@ public class Ex5Shuffle {
 
 
 }
+

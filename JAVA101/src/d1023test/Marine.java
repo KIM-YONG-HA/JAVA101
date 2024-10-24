@@ -6,6 +6,7 @@ package d1023test;
 
 	
 //( 단, 모든 Marine의 공격력과 방어력은 같아야 한다. )
+
 //- 기능 메소드 : 
 //1) 공격력 증가 
 //2) 방어력 증가 
@@ -18,26 +19,35 @@ package d1023test;
 public class Marine {
 	
 	
-	private int x, y, hp, weapon, armor;
+	private int x, y, hp;
+	private static int weapon, armor;
 	
 	Marine() {
 
 		this.x = 0;
 		this.y = 0;
-		this.weapon = 10;
-		this.armor = 10;
 		this.hp = 100;
-		System.out.printf("마린 생성!! %n");
 
 	}
 
+	public Marine(int x, int y) {
+		this(x, y, 100);
+	}
+	
+	public Marine(int x, int y, int hp) {
+		this(x, y, hp, 1);
+	}
+	
+	public Marine(int x, int y, int hp, int weapon) {
+		this(x, y, hp, 1, 1);
+	}
+
 	public Marine(int x, int y, int hp, int weapon, int armor) {
-		super();
 		this.x = x;
 		this.y = y;
 		this.hp = hp;
-		this.weapon = weapon;
-		this.armor = armor;
+		Marine.weapon = weapon;
+		Marine.armor = armor;
 	}
 
 	public int getX() {
@@ -61,9 +71,22 @@ public class Marine {
 	}
 
 	public void setWeapon(int weapon) {
-		this.weapon = weapon;
+		Marine.weapon = weapon;
 	}
 
+//	
+//	public static int getWeapon() {
+//		return Marine.weapon;
+//	}
+//
+//	public static setWeapon(int weapon) {
+//		Marine.weapon = weapon;
+//	}
+//
+//	
+	
+	
+	
 	public int getHp() {
 		return hp;
 	}
@@ -77,29 +100,26 @@ public class Marine {
 	}
 
 	public void setArmor(int armor) {
-		this.armor = armor;
+		Marine.armor = armor;
 	}
 	
 	
 	
 	//1) 공격력 증가 
 	
-	void upgradeWeapon(int w) {
-		
-		int val = this.getWeapon() + w;
-		this.setWeapon(val);
-		System.out.printf("공격력 %d 증가 (현재 공격력:%d)%n", w, val);
-		
+	void upgradeWeapon(int weapon) {
+
+		Marine.weapon += weapon;
+		System.out.printf("공격력 %d 증가 (현재 공격력:%d)%n", weapon, Marine.weapon);
 		
 	}
 	
 	//2) 방어력 증가 
-	void upgradeArmor(int a) {
+	void upgradeArmor(int armor) {
 		
-		int val = this.getWeapon() + a;
-		this.setWeapon(val);
-		System.out.printf("방어력 %d 증가 (현재 방어력:%d)%n", a, val);
+		Marine.armor += armor;
 		
+		System.out.printf("방어력 %d 증가 (현재 방어력:%d)%n", armor, Marine.armor);
 		
 	}
 	
@@ -107,14 +127,14 @@ public class Marine {
 	//3) 체력 감소
 	void hpCalc(int hp) {
 		
-		int crntHp = this.getHp() - hp;
-		this.setHp(crntHp);
-		System.out.printf("hp %d 감소 (현재 hp:%d)%n", hp, crntHp);
+		int val = this.getHp() - hp;
+		this.setHp(val);
+		System.out.printf("hp %d 감소 (현재 hp:%d)%n", hp, val);
 	}
 	
 	
 	//4) 마린 위치 이동
-	void positionChange(int x, int y) {
+	void move(int x, int y) {
 		
 		int posX = this.getX() + x;
 		int posY = this.getY() + y;
@@ -126,6 +146,37 @@ public class Marine {
 		
 	}
 
+	
+	void unitStatus() {
+		
+		//마린의 위치는 (0,0)이고 체력은 0, 공격력은 0, 방어력은 0입니다.
+		
+		String msg = "%n > 마린의 ";
+		msg += "위치는 (" + this.getX() +","+ this.getY() + ")이고 ";
+		msg += "체력은 " + this.getHp() + ", ";
+		msg += "공격력 " + Marine.weapon + ", ";
+		
+
+		
+		String defaultGage = "□";
+		String upGage = "■";
+		
+		msg += "방어력 " + Marine.armor + " ";
+		
+		
+		
+		msg += "입니다. %n%n";
+		
+		System.out.printf(msg);
+		
+		
+	}
+
+	@Override
+	public String toString() {
+		return "Marine [x=" + x + ", y=" + y + ", hp=" + hp + "]";
+	}
+	
 	
 	
 	

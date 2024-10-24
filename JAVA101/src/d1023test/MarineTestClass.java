@@ -4,25 +4,47 @@ public class MarineTestClass {
 
 	public static void main(String[] args) {
 
-		Marine m1 = new Marine();
-		m1.upgradeWeapon(10);
-		m1.upgradeArmor(10);
-		m1.hpCalc(10);
-		m1.positionChange(10, 20);
+//		Marine m1 = new Marine();
+//		m1.upgradeWeapon(1);
+//		m1.upgradeArmor(1);
+//		
+//		
+//		Marine m2 = new Marine();
+//		
+//		m2.upgradeWeapon(1);
+//		m2.upgradeArmor(1);
+//		
+//		
+
+//		
+//		Marine m4 = new Marine();
+//		m4.upgradeWeapon(1);
+//		m3.upgradeArmor(0);
+//		
 		
 		
-		System.out.println();
-		System.out.println();
 		
+		Marine m0 = new Marine(0, 0);
 		
-		Marine m2 = new Marine();
+		m0.upgradeArmor(1);
+		m0.upgradeWeapon(1);
 		
-		m2.upgradeWeapon(20);
-		m2.upgradeArmor(20);
-		m2.hpCalc(50);
-		m2.positionChange(100, 200);
+		m0.unitStatus();
 		
 
+		Marine m1 = new Marine(1, 1);
+		
+		m1.upgradeArmor(1);
+		m1.upgradeWeapon(1);
+		m1.hpCalc(99);
+		m1.unitStatus();
+		
+		
+		Marine m3 = new Marine();
+		m3.upgradeWeapon(1);
+		m3.upgradeArmor(1);
+		m3.move(123, 829);
+		m3.unitStatus();
 		
 		
 	}
