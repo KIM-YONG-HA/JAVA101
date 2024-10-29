@@ -1,6 +1,6 @@
 package j241007;
 
-public class MathClass {
+public class J101_MathRandom {
 
 	public static void main(String[] args) {
 		
