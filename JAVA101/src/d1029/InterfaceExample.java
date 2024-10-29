@@ -1,16 +1,9 @@
 package d1029;
 
 
-interface animal {
-	
-	public void eat(String feed);
-	public void walk(String move);
-	public void sleep(String zzz);
-	
-}
 
 
-class Cat implements animal {
+class Cat implements Animal {
 
 	
 	
@@ -41,7 +34,7 @@ class Cat implements animal {
 
 
 
-class Monkey implements animal {
+class Monkey implements Animal {
 
 	
 	
@@ -73,7 +66,7 @@ class Monkey implements animal {
 
 
 
-class Chicken implements animal {
+class Chicken implements Animal {
 
 	
 	
