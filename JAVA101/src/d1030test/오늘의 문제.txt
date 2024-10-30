@@ -1,0 +1,83 @@
+1. 
+class TV {
+	private int size;
+	public TV(int size) { this.size = size; }
+	protected int getSize() { return size; }
+}
+
+다음 TV 클래스를 상속받은 ColorTV 클래스를 만들어 보세요.
+
+실행결과 : 
+32인치 1024컬러
+
+2. 
+public static void main(String args[]) {
+		IPTV iptv = new IPTV("192.1.1.2", 32, 2048); // "192.1.1.2" 주소에 32인치, 2048 컬러
+		iptv.printProperty();
+	}
+
+다음 main() 메소드와 실행결과를 참고하여 ColorTV를 상속받는 IPTV 클래스를 작성하세요.
+
+실행결과 : 
+나의 IPTV는 192.1.1.2 주소의 32인치 2048컬러
+
+3. Converter 클래스를 상속받아 원화를 달러로 변환하는
+Won2Dollar 클래스를 작성하세요.
+메인 메소드와 실행결과는 다음과 같습니다.
+	public static void main(String args[]) {
+		Won2Dollar toDollar = new Won2Dollar(1200); // 1달러는 1200원
+		toDollar.run();
+	}
+
+실행결과 :
+원을 달러로 바꿉니다.
+원을 입력하세요>> 24000
+변환 결과 : 20.0 달러입니다.
+
+4. Converter 클래스를 상속받아 Km를 mile(마일)로 변환하는 Km2Mile 클래스를 작성하라.
+ main() 메소드와 실행 결과는 다음과 같다.
+
+public static void main(String args[]) {
+		Km2Mile toMile = new Km2Mile(1.6); // 1마일은 1.6km
+		toMile.run();
+
+실행 결과 :
+Km을 mile로 바꿉니다.
+Km을 입력하세요>>30
+변환 결과 : 18.75mile입니다.
+
+
+
+5. 다음은 2차원 상의 한 점을 표현하는 Point 클래스입니다.
+class Point {
+	private int x, y;
+	public Point(int x, int y) { this.x = x; this.y = y; }
+	public int getX() { return x; }
+	public int getY() { return y; }
+	protected void move(int x, int y) { this.x = x; this.y = y; }
+}
+
+Point를 상속받아 색을 가진 점을 나타내는 ColorPoint 클래스를 작성하라.
+다음 main() 메소드를 포함하고 실행 결과와 같이 출력되게 하라.
+
+실행 결과 : 
+RED색의 (10,20)의 점입니다.
+
+6. Point를 상속받아 색을 가진 점을 나타내는 ColorPoint 클래스를 작성하라.
+다음 main() 메소드를 포함하고 실행 결과와 같이 출력되게 하라.
+
+public static void main(String args[]) {
+		ColorPoint zeroPoint = new ColorPoint(); // (0,0) 위치의 BLACK 색 점
+		System.out.println(zeroPoint.toString() + "입니다.");
+		
+		ColorPoint cp = new ColorPoint(10, 10); // (10,10) 위치의 BLACK 색 점
+		cp.setXY(5, 5);
+		cp.setColor("RED");
+		System.out.println(cp.toString() + "입니다.");
+	}
+
+실행결과 :
+BLACK색의 (0,0)의 점입니다.
+RED색의 (5,5)의 점입니다.
+
+
