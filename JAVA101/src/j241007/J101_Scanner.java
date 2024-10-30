@@ -9,11 +9,14 @@ public class J101_Scanner {
 
 		Scanner sc = new Scanner(System.in);
 		
+		int a = sc.nextInt();
+		int b = sc.nextInt();
 		
-		
+				
 		
 		
 
 	}
 
 }
+
