@@ -2,17 +2,16 @@ package d1030test;
 
 public class Won2Dollar extends Converter {
 
-	double dollar;
 	
-	public Won2Dollar(double dollar) {
+	public Won2Dollar(double ratio) {
 		
-		this.dollar = dollar;
+		this.ratio = ratio;
 		
 	}
 
 	@Override
 	protected double convert(double src) {
-		double result = src / dollar;
+		double result = src / ratio;
 		return result;
 	}
 

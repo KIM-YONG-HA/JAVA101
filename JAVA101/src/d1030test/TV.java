@@ -11,8 +11,8 @@ public class TV {
 	}
 	
 	
-	
 	protected int getSize() { 
+		
 		return size; 
 		
 	}
