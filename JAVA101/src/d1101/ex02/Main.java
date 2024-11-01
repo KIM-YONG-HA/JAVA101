@@ -1,4 +1,4 @@
-package d1101.ex01;
+package d1101.ex02;
 
 public class Main {
 
