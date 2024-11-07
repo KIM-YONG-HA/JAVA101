@@ -1,4 +1,4 @@
-package ex1030;
+package d1030.ex;
 
 public class Book {
 	
