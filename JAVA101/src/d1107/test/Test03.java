@@ -26,52 +26,43 @@ public class Test03 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("6과목 등급 공백으로 구분하여 입력");
 		String strGrade = sc.nextLine();
+		strGrade = strGrade.replace(" ", "");
+		
+		
 		List<Character> list = new ArrayList<>();
-		
-		
-		System.out.println(strGrade.length());
-		
-		for(int i=0;i<strGrade.length();i++) {
-			
-			System.out.println(i);
-			//list.add(strGrade.charAt(i*2));
-			
-		}
-		
-	
-		
-		
 		
 		
 		int gradeToPoint = 0;
 		
+		for(int i=0;i<strGrade.length();i++) {
+			
+			list.add(strGrade.charAt(i));
+			
+			switch(list.get(i)) {
+			
+				case 'a':
+				case 'A': gradeToPoint += 4; break;
+				
+				case 'b':
+				case 'B': gradeToPoint += 3; break;
+				
+				case 'c':
+				case 'C': gradeToPoint += 2; break;
+					
+				case 'd':
+				case 'D': gradeToPoint += 1; break;
+				
+				case 'f':
+				case 'F': ; break;
+				
+				default :
+			
+			}
+			
+			
+		}
 		
-		
-//		
-//		
-//		switch(tmp) {
-//		
-//			case "a":
-//			case "A": ; break;
-//			
-//			case "b":
-//			case "B": ; break;
-//			
-//			case "c":
-//			case "C": ; break;
-//				
-//			case "d":
-//			case "D": ; break;
-//			
-//			case "f":
-//			case "F": ; break;
-//			
-//			default :
-//		
-//		}
-//		
-		
-		
+	
 		System.out.println("학점의 점수 합 : " + gradeToPoint);
 		
 		
