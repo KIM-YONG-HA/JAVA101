@@ -1,4 +1,4 @@
-package ex1030;
+package d1030.ex;
 
 import java.util.Scanner;
 
