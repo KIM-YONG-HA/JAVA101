@@ -14,12 +14,9 @@ public class ReadExample3 {
 		
 		
 		byte buffer[] = new byte[5];
+		int readByteNum = is.read(buffer,1,3);
 		
-		while(true) {
-			
-			int readByteNum = is.read(buffer,1,3);
-			
-			if(readByteNum == -1) break;
+
 			for(int i=0;i<buffer.length;i++) {
 				
 				
@@ -32,7 +29,6 @@ public class ReadExample3 {
 //				40
 				
 			}
-		}
 		
 		is.close();
 		
