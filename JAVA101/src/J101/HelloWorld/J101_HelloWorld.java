@@ -1,6 +1,6 @@
-package j240930;
+package J101.HelloWorld;
 
-public class J101_3_HelloWorld {
+public class J101_HelloWorld {
 
 	public static void main(String[] args) {
 		

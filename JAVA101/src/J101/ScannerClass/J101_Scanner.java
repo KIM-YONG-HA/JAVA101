@@ -1,4 +1,4 @@
-package j241007;
+package J101.ScannerClass;
 
 import java.util.Scanner;
 
@@ -9,8 +9,9 @@ public class J101_Scanner {
 
 		Scanner sc = new Scanner(System.in);
 		
-		int a = sc.nextInt();
-		int b = sc.nextInt();
+		String s = sc.next();
+		int c = sc.nextInt();
+		sc.nextLine();
 		
 				
 		

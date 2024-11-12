@@ -1,4 +1,4 @@
-package j241002;
+package J101.TypeCasting;
 
 public class J101_TypeCastingExample {
 

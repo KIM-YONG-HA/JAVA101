@@ -1,4 +1,4 @@
-package j241002;
+package J101.PrimativeType;
 
 public class J101_RealNumber_FloatDouble {
 

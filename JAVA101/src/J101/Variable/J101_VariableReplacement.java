@@ -1,6 +1,6 @@
-package j240930;
+package J101.Variable;
 
-public class J101_4_VariableReplacement {
+public class J101_VariableReplacement {
 
 	public static void main(String[] args) {
 		

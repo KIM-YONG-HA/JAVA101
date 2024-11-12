@@ -1,4 +1,4 @@
-package j241002;
+package J101.PrimativeType;
 
 public class J101_PrimitiveType_Char {
 	public static void main(String[] args) {

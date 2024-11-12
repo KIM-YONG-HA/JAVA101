@@ -1,4 +1,4 @@
-package j241007;
+package J101.MathClass;
 
 public class J101_MathSqrt {
 
