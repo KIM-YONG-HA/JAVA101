@@ -198,8 +198,7 @@ for(Board b : list) {
 
 ### 1-3. LinkedList
 
-* LinkedList 또한 List의 구현 클래스이므로 ArrayList와 사용법은 같다.
-하지만 내부구조가 다르다.
+* LinkedList 또한 List의 구현 클래스이므로 ArrayList와 사용법은 같으나 내부구조는 다르다.
 
 * ArrayList는 내부 배열에 객체를 저장해서 관리하지만 LinkedList는 인접참조를 링크해서 체인처럼 관리
 
@@ -313,28 +312,34 @@ while(ite.hasNext()) {
 메소드 
 
 
-* V put(K key, v Value) :
+* V put(K key, v Value) : 주어진 키로 값을 저장한다.   
+새로운 키일 경우 null을 리턴하고 동일한 키가 있을 경우 값을 대체하고 이전 값을 리턴한다.
 
-* boolean containsKey(Object key) : 
+* boolean containsKey(Object key) : 키의 여부를 확인
 
-* boolean containsValue(Object value) :
+* boolean containsValue(Object value) : 값의 여부를 확인
 
-* Set<Map.Entry<K,V>> entrySet() :
+* Set<Map.Entry<K,V>> entrySet() : 키와 값의 쌍으로 구성된 모든 Map.Engry 객체를 Set에 담아서 리턴
 
-* V get(Object key) :
+* V get(Object key) : 키가 있는 값을 리턴
 
-* boolean isEmpty() :
+* boolean isEmpty() : 컬렉션이 비어있는지 확인
+
+* Set<K> keySet<> : 모든 키를 Set 객체에 담아서 리턴
+
+* int size() : 저장된 키의 총 개수
+
+* Collectio<V> values() : 저장된 모든 값을 콜렉션에 담아서 리턴 
+
+* void clear() : 모든 Map.Entry(키, 값)을 삭제
+
+* V remove(Object key) :키와 일치하는 Map.Entry를 삭제하고 값을 리턴 
 
 
-* Set<K> keySet<> : 
 
-* int size() :
 
-* Collectio<V> values() :
 
-* void clear() :
 
-* V remove(Object key) :
 
 
 
@@ -345,6 +350,73 @@ while(ite.hasNext()) {
 
 
 ### 3-1. HashMap
+
+HashMap은 Map 인터페이스를 구현한 대표적인 Map 컬렉션.
+
+HashMap의 키로 사용할 객체는 hashCode(), equals()메소드로 재정의해서 동등 객체가 될 조건을
+정의해야한다.   
+중복 저장이 되지 않도록 객체가 달라도 동등 객체라면 같은 키로 간주한다.
+
+
+
+Map 컬렉션 생성
+
+``` java
+Map<String, Integer> map = new HashMap<>();
+```
+
+
+객체 저장 
+
+``` java
+
+map.put("홍길동", 100);
+map.put("유재석", 80);
+map.put("정형돈", 10);
+map.put("박명수", 77);
+map.put("홍길동", 44); // 이름키가 중복되어 100->44로 변경 
+
+System.out.println(map.size()); // 4 
+
+```
+
+객체 찾기 
+
+
+``` java 
+System.out.println("홍길동의 점수 : " + map.get("홍길동")); // 44
+```
+		
+
+
+객체를 하나씩 처리 
+
+``` java
+Set<String> keySet = map.keySet(); // key set 얻기 
+Iterator<String> keyIterator = keySet.iterator();
+
+while(keyIterator.hasNext()) {
+
+
+String key = keyIterator.next();
+Integer value = map.get(key);
+
+System.out.printf("[%s:%d]%n", key, value);
+
+//			[정형돈:10]
+//			[박명수:77]
+//			[홍길동:44]
+//			[유재석:80]
+
+}
+
+``` 
+		
+
+
+
+
+
 
 
 
