@@ -1,4 +1,4 @@
-package GUI;
+package GUI.d1113;
 
 import java.awt.Component;
 import java.awt.Container;
@@ -36,7 +36,7 @@ public class MovingText extends JFrame {
 		c.setFocusable(true);
 		c.requestFocus();
 		
-		
+		;
 		
 		c.addMouseListener(new MouseAdapter(){
 			
