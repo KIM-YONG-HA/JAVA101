@@ -13,18 +13,11 @@ public class P001 extends JFrame {
 		setTitle("문제1번");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		
-		
 		Container c = getContentPane();
 		c.setBackground(Color.CYAN);
 		
-		
-		
 		setSize(400,200);
 		setVisible(true);
-		
-		
-		
 		
 	}
 	
