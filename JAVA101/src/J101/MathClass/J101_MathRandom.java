@@ -43,10 +43,10 @@ public class J101_MathRandom {
 // 0.0 이상 1.0 미만의 난수 생성
  double ran1 = Math.random(); // 0.0 <= num < 1.0
  System.out.println("0.0 이상 1.0 미만의 난수: " + ran1);
-     System.out.println();
+ System.out.println();
   
      
-     // 0부터 9까지의 정수 난수 생성
+ // 0부터 9까지의 정수 난수 생성
  // (Math.random() * 10) 의 결과는 0.0 (포함)에서 10.0 (미포함) 사이의 실수
  // 정수로 변환하기 위해 (int)로 캐스팅 
  // 0부터 9까지의 정수가 생성
@@ -72,9 +72,9 @@ public class J101_MathRandom {
  // -10부터 10까지의 정수가 생성
  int ran4 = (int)(Math.random() * 21) - 10; // -10 <= num <= 0
  System.out.println("-10부터 0까지의 정수 난수: " + ran4);
-	     System.out.println();
-	     
-	     
+ System.out.println();
+ 
+ 
 	     
 	
  
@@ -83,8 +83,8 @@ public class J101_MathRandom {
 
 		
 		
-		
-		// 소수점 자리 ....
+	
+	// 소수점 자리 ....
 // round(), ceil(), floor();
 
 
