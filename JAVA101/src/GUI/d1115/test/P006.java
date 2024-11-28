@@ -28,6 +28,8 @@ public class P006 extends JFrame {
 			
 			int ranPosX = (int)(Math.random() * 250) + 50; 
 			int ranPosY = (int)(Math.random() * 250) + 50; 
+			
+			// 이전 좌표 겹치는 부분 
 
 			labels[i] = new JLabel("");
 			labels[i].setOpaque(true);

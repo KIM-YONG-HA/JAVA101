@@ -14,8 +14,6 @@ public class P003 extends JFrame {
 		setTitle("문제3번");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		
-		
 		Container c = getContentPane();
 		c.setLayout(new GridLayout(1,10));
 		
@@ -25,13 +23,9 @@ public class P003 extends JFrame {
 			c.add(new JButton(idx));
 			
 		}
-
-		
 		
 		setSize(500,200);
 		setVisible(true);
-		
-		
 		
 		
 	}

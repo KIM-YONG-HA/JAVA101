@@ -14,8 +14,6 @@ public class P002 extends JFrame {
 		setTitle("문제2번");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		
-		
 		Container c = getContentPane();
 		c.setLayout(new BorderLayout(5,7));
 		

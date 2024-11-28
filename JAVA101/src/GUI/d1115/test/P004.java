@@ -15,7 +15,6 @@ public class P004 extends JFrame {
 		setTitle("문제4번");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		
 		Container c = getContentPane();
 		c.setLayout(new GridLayout(1,10));
 		
@@ -34,8 +33,6 @@ public class P004 extends JFrame {
 			c.add(btns[i]);
 			
 		}
-
-		
 		
 		setSize(500,200);
 		setVisible(true);

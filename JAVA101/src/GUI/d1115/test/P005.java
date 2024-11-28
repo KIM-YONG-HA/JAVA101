@@ -15,7 +15,6 @@ public class P005 extends JFrame {
 		setTitle("문제5번");
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		
-		
 		Container c = getContentPane();
 		c.setLayout(new GridLayout(4,4));
 		
@@ -37,18 +36,14 @@ public class P005 extends JFrame {
 		}
 
 		
-		
 		setSize(500,200);
 		setVisible(true);
-		
-		
 		
 		
 	}
 	
 	
 	public static void main(String[] args) {
-		
 		new P005();
 	}
 
